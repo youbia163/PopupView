@@ -14,10 +14,12 @@ let package = Package(
         .library(name: "PopupView", targets: ["PopupView"]),
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/siteline/swiftui-introspect",
-            from: "1.0.0"
-        )
+//        .package(
+//            url: "https://github.com/siteline/swiftui-introspect",
+//            from: "1.0.0"
+
+
+        .package(url: "https://github.com/siteline/swiftui-introspect", .exact("1.4.0-beta.3")),
     ],
     targets: [
         .target(
